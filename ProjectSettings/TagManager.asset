@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Human
+  - Statue1
+  - Statue2
+  - Statue3
+  - Statue4
   layers:
   - Default
   - TransparentFX
