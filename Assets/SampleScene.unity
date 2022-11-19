@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 246017240}
   - component: {fileID: 246017239}
   - component: {fileID: 246017241}
+  - component: {fileID: 246017242}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -270,9 +271,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246017235}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad61f555b43a074b8ff31b75f8474e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &246017242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246017235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa11d026624004a41b32b5ce2affa8b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &301787198
@@ -545,9 +558,10 @@ GameObject:
   - component: {fileID: 489411270}
   - component: {fileID: 489411269}
   - component: {fileID: 489411268}
+  - component: {fileID: 489411271}
   m_Layer: 0
   m_Name: Statue3
-  m_TagString: Statue3
+  m_TagString: Statue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -559,7 +573,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 489411267}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cd7badf9b9cc7c4c8889914f1c3c280, type: 3}
   m_Name: 
@@ -602,6 +616,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2039762, y: 3.2281013}
   m_EdgeRadius: 0
+--- !u!114 &489411271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489411267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &489411272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -678,9 +704,10 @@ GameObject:
   - component: {fileID: 533350154}
   - component: {fileID: 533350153}
   - component: {fileID: 533350155}
+  - component: {fileID: 533350156}
   m_Layer: 0
   m_Name: Statue1
-  m_TagString: Statue1
+  m_TagString: Statue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -692,7 +719,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 533350152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cd7badf9b9cc7c4c8889914f1c3c280, type: 3}
   m_Name: 
@@ -735,6 +762,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 3.2}
   m_EdgeRadius: 0
+--- !u!114 &533350156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533350152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &533350157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -976,9 +1015,10 @@ GameObject:
   - component: {fileID: 753262181}
   - component: {fileID: 753262180}
   - component: {fileID: 753262179}
+  - component: {fileID: 753262182}
   m_Layer: 0
   m_Name: Statue2
-  m_TagString: Statue2
+  m_TagString: Statue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,7 +1030,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 753262178}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cd7badf9b9cc7c4c8889914f1c3c280, type: 3}
   m_Name: 
@@ -1033,6 +1073,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.210826, y: 3.2091649}
   m_EdgeRadius: 0
+--- !u!114 &753262182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753262178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &753262183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1351,9 +1403,10 @@ GameObject:
   - component: {fileID: 1425237882}
   - component: {fileID: 1425237881}
   - component: {fileID: 1425237880}
+  - component: {fileID: 1425237883}
   m_Layer: 0
   m_Name: Statue4
-  m_TagString: Statue4
+  m_TagString: Statue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1365,7 +1418,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425237879}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3cd7badf9b9cc7c4c8889914f1c3c280, type: 3}
   m_Name: 
@@ -1408,6 +1461,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2014375, y: 3.2237172}
   m_EdgeRadius: 0
+--- !u!114 &1425237883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425237879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &1425237884
 SpriteRenderer:
   m_ObjectHideFlags: 0

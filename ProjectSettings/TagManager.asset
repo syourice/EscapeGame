@@ -9,6 +9,7 @@ TagManager:
   - Statue2
   - Statue3
   - Statue4
+  - Statue
   layers:
   - Default
   - TransparentFX
