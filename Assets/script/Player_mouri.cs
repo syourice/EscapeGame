@@ -2,28 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// プレイヤーの動きに関する処理
+/// </summary>
+
 public class Player_mouri : MonoBehaviour
 {
     private Vector2 m_speed;
-    private GameObject targetObject = null;
-    private Statue_mouri statueScript = null;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    // 触れているオブジェクトを格納しておく
+    private GameObject m_targetObject = null;
+    private Statue_mouri m_statueScript = null;
+
+    // 移動可能かどうか
+    private bool m_isMovable = true;
+    public bool IsMovable {
+        get { return m_isMovable; }
+        set { m_isMovable = value; }
     }
+
 
     // Update is called once per frame
     void Update()
     {
+        // 移動可能でなければここでリターン
+        if (!m_isMovable) 
+            return;
+
         //左右移動
         MoveX();
         //上下移動
         MoveY();
 
         transform.Translate(m_speed.x, m_speed.y, 0.0f);
-
+        
+        // 銅像の回転命令
         Action();
     }
 
@@ -49,8 +62,9 @@ public class Player_mouri : MonoBehaviour
 
     void Action() {
         if (Input.GetKeyDown(KeyCode.Space)) {
-            if (statueScript != null) {
-                statueScript.Rotate();
+            if (m_statueScript != null) {
+                // 回転処理を実行する
+                m_statueScript.Rotate();
             }
         }
     }
@@ -58,13 +72,15 @@ public class Player_mouri : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Human")) {
         } else if (collision.gameObject.CompareTag("Statue")) {
-            targetObject = collision.gameObject;
-            statueScript = targetObject.GetComponent<Statue_mouri>();
+            // 触れている銅像オブジェクトとそのスクリプトを取得
+            m_targetObject = collision.gameObject;
+            m_statueScript = m_targetObject.GetComponent<Statue_mouri>();
         }
     }
 
     private void OnCollisionExit2D(Collision2D collision) {
-        targetObject = null;
-        statueScript = null;
+        // 銅像から離れたら参照をnullにしておく
+        m_targetObject = null;
+        m_statueScript = null;
     }
 }
