@@ -631,7 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateWaitTime: 0
+  m_rotateWaitTime: 0.02
 --- !u!212 &489411272
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateWaitTime: 0
+  m_rotateWaitTime: 0.02
 --- !u!212 &533350157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateWaitTime: 0
+  m_rotateWaitTime: 0.02
 --- !u!212 &753262183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1534,7 +1534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 048b991bf336ef34c8a849a5d03753c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_rotateWaitTime: 0
+  m_rotateWaitTime: 0.02
 --- !u!212 &1425237884
 SpriteRenderer:
   m_ObjectHideFlags: 0
