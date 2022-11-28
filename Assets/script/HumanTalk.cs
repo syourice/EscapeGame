@@ -8,55 +8,47 @@ using UnityEngine;
 public class HumanTalk : MonoBehaviour
 {
     [SerializeField]//画面に表示する
-    UnityEngine.UI.Text textbox;
+    UnityEngine.UI.Text m_textbox;
+    //選ばれた成否が入ってる
+    private CurrectData m_humanBrain;
     
-    private Player playerScript;
-
-    private string character = "";
-
-    [SerializeField]//スクリクタブルオブジェクトデータ
-    private CurrectData[] currectData = new CurrectData[2];
-    //どのスクリクタブルオブジェクトデータを使うか
-    private int n;
-
-    //ここでどのキャラクターに話しかけたか判定して
-    //その判定にあうキャラのセリフをあてる
+    private Player m_playerScript;
+    //Humanの名前を入れる
+    private string m_character = "";
 
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = GameObject.Find("Player").GetComponent<Player>();
-        //ランダムにデータを選ぶ
-        n = Random.Range(1, 3);
-        Debug.Log(n);
+        m_playerScript = GameObject.Find("Player").GetComponent<Player>();
+        m_humanBrain = GameObject.Find("HumanDataBase").GetComponent<HumanBrain>().GetIsSynapse();
     }
 
     void Update()
     {
         //humanの名前を取得
-        character = playerScript.GetObjectName();
+        m_character = m_playerScript.GetObjectName();
         //humanに触れたか
-        if (playerScript.GetHumanFlag == true)
+        if (m_playerScript.GetHumanFlag == true)
         {
-            for (int i = 0; i < currectData.Length; i++)
+            for (int i = 0; i < 4; i++)
             {
                 //どのhumanに話を聞きに行ったか
-                switch (character)
+                switch (m_character)
                 {
                     case "Human1":
-                        textbox.text = currectData[n].CurrectDirection[0];
+                        m_textbox.text = m_humanBrain.CurrectDirection[0];
                         break;
                     case "Human2":
-                        textbox.text = currectData[n].CurrectDirection[1];
+                        m_textbox.text = m_humanBrain.CurrectDirection[1];
                         break;
                     case "Human3":
-                        textbox.text = currectData[n].CurrectDirection[2];
+                        m_textbox.text = m_humanBrain.CurrectDirection[2];
                         break;
                     case "Human4":
-                        textbox.text = currectData[n].CurrectDirection[3];
+                        m_textbox.text = m_humanBrain.CurrectDirection[3];
                         break;
                     default:
-                        textbox.text = "";
+                        m_textbox.text = "失敗";
                         break;
                 }
             }
