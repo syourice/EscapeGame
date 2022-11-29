@@ -9,10 +9,10 @@ using UnityEngine;
 public class HumanBrain : MonoBehaviour
 {
     //選ばれた成否をTextに渡す
-    public CurrectData m_isSynapse;
+    public CorrectData m_isSynapse;
 
     [SerializeField]//スクリクタブルオブジェクトデータ
-    private List<CurrectData> m_currectData = new List<CurrectData>();
+    private List<CorrectData> m_CorrectData = new List<CorrectData>();
 
     //どのスクリクタブルオブジェクトデータを使うか
     private int m_n;
@@ -25,11 +25,11 @@ public class HumanBrain : MonoBehaviour
         //ランダムにデータを選ぶ
         m_n = Random.Range(0, 2);
         //選ばれた成否を渡す
-        m_isSynapse = m_currectData[m_n];
+        m_isSynapse = m_CorrectData[m_n];
     }
 
     //伝えるためにGet化
-    public CurrectData GetIsSynapse()
+    public CorrectData GetIsSynapse()
     {
         return m_isSynapse;
     }

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53ee7e8343c0b0f4aa3bea2f0441e272, type: 3}
   m_Name: CurrectData_2
   m_EditorClassIdentifier: 
-  CurrectDirection:
-  - 
-  - 
-  - 
-  - 
-  CurrectNum: 00000000000000000000000000000000
+  CorrectDirection:
+  - "\u4E0A"
+  - "\u5DE6"
+  - "\u4E0B"
+  - "\u53F3"
+  CorrectNum: 02000000030000000000000001000000

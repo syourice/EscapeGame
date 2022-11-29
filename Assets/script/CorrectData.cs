@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "MyScriptable/Create EnemyData")]
-public class CurrectData : ScriptableObject
+public class CorrectData : ScriptableObject
 {
-	public string[] CurrectDirection = new string[4];
-	public int[] CurrectNum = new int[4];
+	public string[] CorrectDirection = new string[4];
+	public int[] CorrectNum = new int[4];
 }
