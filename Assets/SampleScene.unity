@@ -345,10 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54148e5251dc4b04ea810251e8eda42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textbox: {fileID: 1489939050}
-  currectData:
-  - {fileID: 0}
-  - {fileID: 0}
+  m_textbox: {fileID: 1489939050}
 --- !u!212 &301787201
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1211,10 +1208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54148e5251dc4b04ea810251e8eda42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textbox: {fileID: 1489939050}
-  currectData:
-  - {fileID: 0}
-  - {fileID: 0}
+  m_textbox: {fileID: 1489939050}
 --- !u!212 &1073586586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1384,10 +1378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54148e5251dc4b04ea810251e8eda42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textbox: {fileID: 1489939050}
-  currectData:
-  - {fileID: 0}
-  - {fileID: 0}
+  m_textbox: {fileID: 1489939050}
 --- !u!212 &1315022688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1732,10 +1723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54148e5251dc4b04ea810251e8eda42e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textbox: {fileID: 1489939050}
-  currectData:
-  - {fileID: 0}
-  - {fileID: 0}
+  m_textbox: {fileID: 1489939050}
 --- !u!212 &1759783763
 SpriteRenderer:
   m_ObjectHideFlags: 0
