@@ -16,7 +16,7 @@ public class Judgement
     public Judgement(HumanBrain humanBrain, Statue_mouri[] statueObject) {
         m_humanBrain = humanBrain;
         m_statueObjects = statueObject;
-        m_dataNum = m_humanBrain.m_isSynapse.CorrectNum.Length;
+        m_dataNum = m_statueObjects.Length;
     }
 
     // 判定
