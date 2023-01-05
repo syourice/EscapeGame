@@ -23,7 +23,7 @@ public class HumanBrain : MonoBehaviour
     void Start()
     {
         //ランダムにデータを選ぶ
-        m_n = Random.Range(0, 2);
+        m_n = Random.Range(0, 3);
         //選ばれた成否を渡す
         m_isSynapse = m_CorrectData[m_n];
     }

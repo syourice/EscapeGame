@@ -555,10 +555,10 @@ GameObject:
   m_Component:
   - component: {fileID: 489411273}
   - component: {fileID: 489411272}
-  - component: {fileID: 489411270}
   - component: {fileID: 489411269}
   - component: {fileID: 489411268}
   - component: {fileID: 489411271}
+  - component: {fileID: 489411270}
   m_Layer: 0
   m_Name: Statue3
   m_TagString: Statue
@@ -590,8 +590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366950e938ec6494daee2171e675f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &489411270
-BoxCollider2D:
+--- !u!58 &489411270
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -603,19 +603,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: -0.0000011920929}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.2039762, y: 3.2281013}
-  m_EdgeRadius: 0
+  m_Radius: 1.5
 --- !u!114 &489411271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -667,12 +657,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b14479736589994094b80a678b12a87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94a277ddc6ceec84d990ecbf4e247951, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -704,8 +694,8 @@ GameObject:
   - component: {fileID: 533350157}
   - component: {fileID: 533350154}
   - component: {fileID: 533350153}
-  - component: {fileID: 533350155}
   - component: {fileID: 533350156}
+  - component: {fileID: 533350155}
   m_Layer: 0
   m_Name: Statue1
   m_TagString: Statue
@@ -737,8 +727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366950e938ec6494daee2171e675f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &533350155
-BoxCollider2D:
+--- !u!58 &533350155
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -751,18 +741,8 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2, y: 3.2}
-  m_EdgeRadius: 0
+  m_Radius: 1.5
 --- !u!114 &533350156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,12 +794,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b14479736589994094b80a678b12a87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94a277ddc6ceec84d990ecbf4e247951, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1014,10 +994,10 @@ GameObject:
   m_Component:
   - component: {fileID: 753262184}
   - component: {fileID: 753262183}
-  - component: {fileID: 753262181}
   - component: {fileID: 753262180}
   - component: {fileID: 753262179}
   - component: {fileID: 753262182}
+  - component: {fileID: 753262181}
   m_Layer: 0
   m_Name: Statue2
   m_TagString: Statue
@@ -1049,8 +1029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366950e938ec6494daee2171e675f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &753262181
-BoxCollider2D:
+--- !u!58 &753262181
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1062,19 +1042,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: 0.011637807}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.210826, y: 3.2091649}
-  m_EdgeRadius: 0
+  m_Radius: 1.5
 --- !u!114 &753262182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1126,12 +1096,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b14479736589994094b80a678b12a87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94a277ddc6ceec84d990ecbf4e247951, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1307,6 +1277,7 @@ MonoBehaviour:
   - {fileID: 489411271}
   - {fileID: 1425237883}
   m_playerObject: {fileID: 246017242}
+  m_humanBrain: {fileID: 2143080272}
 --- !u!4 &1111952912
 Transform:
   m_ObjectHideFlags: 0
@@ -1452,10 +1423,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1425237885}
   - component: {fileID: 1425237884}
-  - component: {fileID: 1425237882}
   - component: {fileID: 1425237881}
   - component: {fileID: 1425237880}
   - component: {fileID: 1425237883}
+  - component: {fileID: 1425237882}
   m_Layer: 0
   m_Name: Statue4
   m_TagString: Statue
@@ -1487,8 +1458,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 366950e938ec6494daee2171e675f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &1425237882
-BoxCollider2D:
+--- !u!58 &1425237882
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1500,19 +1471,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000023841858, y: 0.00000023841858}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.2, y: 3.2}
-    newSize: {x: 0.16, y: 0.16}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.2014375, y: 3.2237172}
-  m_EdgeRadius: 0
+  m_Radius: 1.5
 --- !u!114 &1425237883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1564,12 +1525,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7b14479736589994094b80a678b12a87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94a277ddc6ceec84d990ecbf4e247951, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1938,6 +1899,7 @@ MonoBehaviour:
   m_CorrectData:
   - {fileID: 11400000, guid: 1dcbf712ce82b8844941062b17bdfeab, type: 2}
   - {fileID: 11400000, guid: 1735ef24b7e273f40a68b34d5562a975, type: 2}
+  - {fileID: 11400000, guid: f170f2fca09552643acb051686602977, type: 2}
 --- !u!4 &2143080273
 Transform:
   m_ObjectHideFlags: 0
