@@ -9,7 +9,7 @@ using UnityEngine;
 public class HumanBrain : MonoBehaviour
 {
     //選ばれた成否をTextに渡す
-    public CorrectData m_isSynapse;
+    public CorrectData m_isSynapse = null;
 
     [SerializeField]//スクリクタブルオブジェクトデータ
     private List<CorrectData> m_CorrectData = new List<CorrectData>();

@@ -2,9 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// プレイヤーの動きに関する処理
-/// </summary>
 
 public class Player_mouri : MonoBehaviour
 {
@@ -21,6 +18,8 @@ public class Player_mouri : MonoBehaviour
         set { m_isMovable = value; }
     }
 
+    private string m_objectName = null;
+    private bool m_humanFlag = false;
 
     // Update is called once per frame
     void Update()
@@ -71,6 +70,9 @@ public class Player_mouri : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.CompareTag("Human")) {
+            //アクション(会話)を起こす
+            m_humanFlag = true;
+            m_objectName = collision.transform.name;
         } else if (collision.gameObject.CompareTag("Statue")) {
             // 触れている銅像オブジェクトとそのスクリプトを取得
             m_targetObject = collision.gameObject;
@@ -82,5 +84,17 @@ public class Player_mouri : MonoBehaviour
         // 銅像から離れたら参照をnullにしておく
         m_targetObject = null;
         m_statueScript = null;
+    }
+
+    //HumanTalkに使う
+    //プレイヤーが当たったオブジェクトの名前を取得する
+    public string GetObjectName() {
+        return m_objectName;
+    }
+
+    //HumanTalkに使う
+    public bool GetHumanFlag {
+        get { return m_humanFlag; }
+        set { m_humanFlag = value; }
     }
 }

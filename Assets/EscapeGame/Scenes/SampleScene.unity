@@ -1301,7 +1301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c03ca2103af3ab84d8301552c359e0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_statusObjects:
+  m_statueObjects:
   - {fileID: 533350156}
   - {fileID: 753262182}
   - {fileID: 489411271}

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cysharp.Threading.Tasks;
 
 /*
  * humanにヒントをしゃべらせる
@@ -17,10 +18,12 @@ public class HumanTalk : MonoBehaviour
     private string m_character = "";
 
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
         m_playerScript = GameObject.Find("Player").GetComponent<Player>();
         m_humanBrain = GameObject.Find("HumanDataBase").GetComponent<HumanBrain>();
+        // m_humanBrain.GetIsSynapse()から返ってくる値がnullではなくなるまで待機する
+        await UniTask.WaitUntil(() => m_humanBrain.GetIsSynapse() != null);
         m_humanSynapse = m_humanBrain.GetIsSynapse();
     }
 
