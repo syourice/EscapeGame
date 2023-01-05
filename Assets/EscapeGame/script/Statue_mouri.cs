@@ -17,7 +17,7 @@ public class Statue_mouri : MonoBehaviour
     // 何回転したかカウントする
     int m_rotateCount = 0;
     // オブジェクトの向きを格納する
-    DirectionLabel m_direction = DirectionLabel.Up;
+    DirectionLabel m_direction = DirectionLabel.Down;
     
     // オブジェクトの向きを取得する
     public DirectionLabel Direction {
@@ -30,10 +30,10 @@ public class Statue_mouri : MonoBehaviour
 
     // 向き用ラベル
     public enum DirectionLabel {
-        Up,
-        Left,
         Down,
-        Right
+        Right,
+        Up,
+        Left
     }
 
     public void Rotate() {
@@ -59,16 +59,16 @@ public class Statue_mouri : MonoBehaviour
         m_isRotate = false;
 
         switch (GetDirection(m_rotateCount)) {
-            case DirectionLabel.Up:
+            case DirectionLabel.Down:
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 0.0f);
                 break;
-            case DirectionLabel.Left:
+            case DirectionLabel.Right:
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 90.0f);
                 break;
-            case DirectionLabel.Down:
-                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 180.0f);
+            case DirectionLabel.Up:
+                this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -180.0f);
                 break;
-            case DirectionLabel.Right:
+            case DirectionLabel.Left:
                 this.transform.rotation = Quaternion.Euler(0.0f, 0.0f, -90.0f);
                 break;
         }
